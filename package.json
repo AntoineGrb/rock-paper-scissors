@@ -1,0 +1,19 @@
+{
+  "name": "projet_jeux_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "sass" : "sass --watch main.scss:style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntoineGrb/Games_JS.git"
+  },
+  "author": "AntoineGrb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntoineGrb/Games_JS/issues"
+  },
+  "homepage": "https://github.com/AntoineGrb/Games_JS#readme"
+}
