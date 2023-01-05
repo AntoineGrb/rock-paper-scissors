@@ -1,0 +1,117 @@
+/*------------ POLICES & TEXTES ------------- */
+p {
+  color: whitesmoke;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: whitesmoke;
+  text-decoration: underline;
+  font-size: 2em;
+}
+
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: whitesmoke;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 2em;
+  border: solid whitesmoke;
+  padding: 5px;
+  margin-top: 50px;
+}
+
+/*------------ CONTENU PRINCIPAL ------------- */
+body {
+  background-image: url("../Images/Tapis2.jpg");
+  background-repeat: repeat;
+  background-color: whitesmoke;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  border-right: solid whitesmoke;
+  width: 50%;
+}
+.user__title { /* Le bloc titre de l'utilisateur */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.user__board {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.user__board__select__rock {
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+.user__board__select__paper {
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+.user__board__select__scissors {
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+.user__board__play {
+  border: solid 10px blue;
+}
+
+.IA {
+  display: flex;
+  flex-direction: column;
+  border-right: solid;
+  width: 50%;
+}
+.IA__title { /* Le bloc titre de l'IA */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.IA__board {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.IA__board__play {
+  border: solid 10px red;
+}
+.IA__board__select__rock {
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+.IA__board__select__paper {
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+.IA__board__select__scissors {
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+.IA__board__select img {
+  filter: grayscale(100%);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
