@@ -8,12 +8,14 @@ h1 {
   color: whitesmoke;
   text-decoration: underline;
   font-size: 2em;
+  margin: 0;
 }
 
 h2 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: whitesmoke;
   font-size: 1.5em;
+  margin-top: 20px;
 }
 
 h3 {
@@ -21,9 +23,7 @@ h3 {
   color: whitesmoke;
   font-weight: bold;
   font-size: 2em;
-  border: solid whitesmoke;
-  padding: 5px;
-  margin-top: 50px;
+  margin: 0;
 }
 
 /*------------ CONTENU PRINCIPAL ------------- */
@@ -34,7 +34,7 @@ body {
 }
 
 header {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 main {
@@ -52,12 +52,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 .user__board {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-between;
 }
 .user__board__select__rock {
   -webkit-clip-path: circle();
@@ -72,7 +72,7 @@ main {
           clip-path: circle();
 }
 .user__board__play {
-  border: solid 10px blue;
+  margin-right: 150px;
 }
 
 .IA {
@@ -85,15 +85,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 .IA__board {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-}
-.IA__board__play {
-  border: solid 10px red;
 }
 .IA__board__select__rock {
   -webkit-clip-path: circle();
@@ -110,8 +107,24 @@ main {
 .IA__board__select img {
   filter: grayscale(100%);
 }
+.IA__board__play {
+  margin-left: 150px;
+}
 
 footer {
   display: flex;
   justify-content: center;
+  margin: 0;
+}
+footer .result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+footer .result__text {
+  border: solid whitesmoke;
+  padding: 5px;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */

@@ -4,20 +4,26 @@
   <meta charset="utf-8">
   <title> Pierre-papier-ciseaux </title>
   <link rel="stylesheet" href="sass/style.css">
-  <script src="script.js"> </script>
 </head>
 <body>
     <header>
 
         <form method="get" action=""> 
             <p>
-                <label for="level"> Sélectionner le mode de l'IA </label> <br/>
+                <label for="mode"> Sélectionner le mode de l'IA </label> <br/>
                 <select name="mode" id="mode">
                     <option value="random"> Random </option>
                     <option value="expert"> Expert </option>
                 </select>
             </p>
         </form>
+
+        <div id="zone__test__user"> <p>  </p>
+        </div>
+        <div id="zone__test__IA"> <p>  </p>
+        </div>
+        <div id="zone__test__win"> <p>  </p>
+        </div>
 
     </header>
 
@@ -47,7 +53,7 @@
 
                 <div class="user__board__play">
 
-                    <div class="user__board__play__img"> <img src="Images/Rock_big.png" title="Main jouée" height="400px" width="auto" /> </div>
+                    <div class="user__board__play__img"> <img src="" title="" height="400px" width="auto"/> </div>
 
                 </div>
 
@@ -68,7 +74,7 @@
 
                 <div class="IA__board__play">
 
-                    <div class="user__board__play__img"> <img src="Images/Scissors_big.png" alt="Main jouée" height="400px" width="auto" /> </div>
+                    <div class="IA__board__play__img"> <img src="" alt="" height="400px" width="auto" /> </div>
 
                 </div>
 
@@ -92,15 +98,13 @@
     <footer> 
 
         <div class="result"> 
-
-            <h3> <span class="result_variable"> User </span> WINS ! </h3>
-
-        </div>
-
-        <div id="zone__test"> <p> test </p>
+            <div class="result__text"> <h3> <span class="result__text__variable"> </span> WINS ! </h3> </div>
+            <input class="result__button" type="button" value="Reset scores" />
         </div>
 
     </footer>
+
+<script type="text/javascript" src="./script.js"> </script>
 
 </body>
 </html>
