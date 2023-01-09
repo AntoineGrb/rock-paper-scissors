@@ -96,6 +96,8 @@ document.querySelector(".user__board__select__rock")
                 event.stopPropagation();
                 event.preventDefault();
 
+                document.getElementById("audio_hand").play(); // Joue l'audio "audio_hand"
+
                 // Main de l'utilisateur
                 userHand = "rock";
                 console.log("User plays : " , userHand);
@@ -157,11 +159,13 @@ document.querySelector(".user__board__select__rock")
                 if (userScore == 3) {
                         document.querySelector(".result__text__variable").innerText = "USER ";
                         document.querySelector(".result").style.display = "flex";
+                        document.getElementById("audio_win").play(); // Joue l'audio "audio_win"
                 }
 
                 else if (iaScore == 3) {
                         document.querySelector(".result__text__variable").innerText = "IA ";
                         document.querySelector(".result").style.display = "flex";
+                        document.getElementById("audio_lose").play(); // Joue l'audio "audio_lose"
                 }
         });
 
@@ -171,6 +175,8 @@ document.querySelector(".user__board__select__paper")
 
                 event.stopPropagation();
                 event.preventDefault();
+
+                document.getElementById("audio_hand").play(); // Joue l'audio "audio_hand"
             
                 // Main de l'utilisateur
                 userHand = "paper";
@@ -233,11 +239,13 @@ document.querySelector(".user__board__select__paper")
                 if (userScore == 3) {
                         document.querySelector(".result__text__variable").innerText = "USER ";
                         document.querySelector(".result").style.display = "flex";
+                        document.getElementById("audio_win").play(); // Joue l'audio "audio_win"
                 }
 
                 else if (iaScore == 3) {
                         document.querySelector(".result__text__variable").innerText = "IA ";
                         document.querySelector(".result").style.display = "flex";
+                        document.getElementById("audio_lose").play(); // Joue l'audio "audio_lose"
                 }
         });
 
@@ -247,6 +255,8 @@ document.querySelector(".user__board__select__scissors")
 
                 event.stopPropagation();
                 event.preventDefault();
+
+                document.getElementById("audio_hand").play(); // Joue l'audio "audio_hand"
         
                 userHand = "scissors";
                 console.log("User plays : " , userHand);
@@ -310,11 +320,13 @@ document.querySelector(".user__board__select__scissors")
                 if (userScore == 3) {
                         document.querySelector(".result__text__variable").innerText = "USER ";
                         document.querySelector(".result").style.display = "flex";
+                        document.getElementById("audio_win").play(); // Joue l'audio "audio_win"
                 }
 
                 else if (iaScore == 3) {
                         document.querySelector(".result__text__variable").innerText = "IA ";
                         document.querySelector(".result").style.display = "flex";
+                        document.getElementById("audio_lose").play(); // Joue l'audio "audio_lose"
                 }
         });
 
